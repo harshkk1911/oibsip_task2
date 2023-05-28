@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Portfolio</title>
+  <style>
+    /* Import Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+    /* Global Styles */
+    body {
+      font-family: 'Open Sans', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Header Styles */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 48px;
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+    }
+    
+    /* Hero Section Styles */
+    .hero {
+      background-image: url('profile-image.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    
+    h2 {
+      font-size: 36px;
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 400;
+    }
+    
+    /* About Section Styles */
+    .about {
+      background-color: #f2f2f2;
+      padding: 50px;
+      text-align: center;
+    }
+    
+    h3 {
+      font-size: 30px;
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+    }
+    
+    .about p {
+      margin: 20px 0;
+      font-family: 'Open Sans', Arial, sans-serif;
+      font-weight: 400;
+    }
+    
+    /* Skills Section Styles */
+    .skills {
+      background-color: #fff;
+      padding: 50px;
+      text-align: center;
+    }
+    
+    h3 {
+      font-size: 30px;
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+    }
+    
+    .skills-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    
+    .skills-item {
+      background-color: #f2f2f2;
+      color: #333;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin: 10px;
+      font-weight: bold;
+      font-family: 'Open Sans', Arial, sans-serif;
+      font-weight: 400;
+    }
+    
+    /* Projects Section Styles */
+    .projects {
+      background-color: #f2f2f2;
+      padding: 50px;
+      text-align: center;
+    }
+    
+    h3 {
+      font-size: 30px;
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+    }
+    
+    .project {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+    
+    .project img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    
+    .project h4 {
+      margin-top: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+    }
+    
+    .project p {
+      margin-bottom: 0;
+      font-family: 'Open Sans', Arial, sans-serif;
+      font-weight: 400;
+    }
+    
+    /* Contact Section Styles */
+    .contact {
+      background-color: #333;
+      color: #fff;
+      padding: 50px;
+      text-align: center;
+    }
+    
+    .contact p {
+      margin: 10px 0;
+      font-family: 'Open Sans', Arial, sans-serif;
+      font-weight: 400;
+    }
+    
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Added Animation Styles */
+    .fade-in {
+      opacity: 0;
+      animation: fadeInAnimation 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeInAnimation {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Additional CSS Styles */
+    h1{
+        color: white;
+    }
+
+    h2,
+    h3,
+    h4 {
+      color: #333;
+    }
+
+    .skills-item {
+      background-color: #8bc34a;
+      color: #fff;
+      transition: background-color 0.3s ease;
+    }
+
+    .skills-item:hover {
+      background-color: #4caf50;
+    }
+
+    .project {
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #555;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Harsh Kumar</h1>
+    <p>Web Developer</p>
+  </header>
+  
+  <section class="hero">
+    <h2>Welcome to My Portfolio</h2>
+  </section>
+  
+  <section class="about fade-in">
+    <h3>About Me</h3>
+    <p>I am a passionate web developer with expertise in HTML, CSS, and JavaScript. I love creating visually stunning and user-friendly websites.</p>
+    <p>With years of practising, I have developed a strong skill set in front-end development and have worked on various projects, ranging from personal websites to e-commerce platforms.</p>
+  </section>
+  
+  <section class="skills fade-in">
+    <h3>Skills</h3>
+    <div class="skills-list">
+      <div class="skills-item">HTML</div>
+      <div class="skills-item">CSS</div>
+      <div class="skills-item">JavaScript</div>
+      <div class="skills-item">Responsive Design</div>
+      <div class="skills-item">Bootstrap</div>
+      <div class="skills-item">jQuery</div>
+      <div class="skills-item">React</div>
+    </div>
+  </section>
+  
+  <section class="projects fade-in">
+    <h3>Projects</h3>
+    
+    <div class="project">
+      <img src="project.png" alt="Project 1">
+      <div>
+        <h4>Altered Fingerprint Detection</h4>
+        <p>With the help of two databases, one for modified fingerprints and one for modified original fingerprints, we hope to create a fingerprint identification system that can compare the modified fingerprints to the originals. The original fingerprint database will contain intact fingerprints, but modified fingerprints will contain fingerprints that have undergone various modifications such as blurring, distortion, or noise in the database. We extract features from input fingerprints and compare them with features extracted from two databases using advanced machine learning algorithms and deep neural networks. The scanned fingerprint will be correctly matched with the original by our algorithm, which will determine the trust score for the match.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="contact fade-in">
+    <h3>Contact Information</h3>
+    <p>Email: harshkk1911@gmail.com</p>
+    <p>Phone: +91 7048978557</p>
+    <a href="index_resume.html">My Resume</a>
+  </section>
+  
+  <footer>
+    <p>&copy; 2023 Harsh Kumar. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript Code -->
+  <script>
+    // Add animation class to fade-in sections on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const fadeSections = document.querySelectorAll('.fade-in');
+      fadeSections.forEach(function(section) {
+        section.style.visibility = 'hidden';
+        section.style.animationDelay = '0.2s';
+      });
+
+      let delay = 0;
+      fadeSections.forEach(function(section) {
+        setTimeout(function() {
+          section.style.visibility = 'visible';
+        }, delay);
+        delay += 200;
+      });
+    });
+  </script>
+</body>
+</html>
